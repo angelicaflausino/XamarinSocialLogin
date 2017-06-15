@@ -5,7 +5,15 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="XamarinSocialLogin.Views.MainPage"
              Title="MainPage">
-  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Label Text="{Binding Title}" />
-  </StackLayout>
+  <StackLayout HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="CenterAndExpand">
+        <Image Source="{Binding User.Photo}"
+               Aspect="AspectFit"
+               HorizontalOptions="Center"
+               VerticalOptions="FillAndExpand"/>
+        <Label Text="{Binding User.Name}"
+             FontSize="Large"
+             HorizontalOptions="Center"
+             VerticalOptions="FillAndExpand"/>
+    </StackLayout>
 </ContentPage>

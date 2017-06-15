@@ -4,21 +4,25 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using XamarinSocialLogin.Models;
 
 namespace XamarinSocialLogin.ViewModels
 {
     public class MainPageViewModel : BindableBase, INavigationAware
     {
-        private string _title;
-        public string Title
+        INavigationService _navigationService;
+
+        private User _user;
+
+        public User User
         {
-            get { return _title; }
-            set { SetProperty(ref _title, value); }
+            get { return _user; }
+            set { SetProperty(ref _user, value); }
         }
 
-        public MainPageViewModel()
+        public MainPageViewModel(INavigationService navigationService)
         {
-
+            _navigationService = navigationService;
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
@@ -33,8 +37,7 @@ namespace XamarinSocialLogin.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            if (parameters.ContainsKey("title"))
-                Title = (string)parameters["title"] + " and Prism";
+            User = (User)parameters["user"];
         }
     }
 }
