@@ -11,6 +11,11 @@ Dependências
 -------
 - [Windows.Azure.Mobile.Client 3.1.0](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Client/3.1.0)
 
+Passo a passo em Vídeo
+-------
+
+- [Alpha2/Youtube](https://www.youtube.com/playlist?list=PLHSGc3f3PK0SqRBJlN67KoEfA93fUnhvw)
+
 ## Configurando ambiente no portal da Azure ##
 
 1) Acesse o portal da azure e em + novo pesquise pelo recurso **Mobile Apps QuickStart**. Clique no recurso e em seguida Criar.
