@@ -73,6 +73,3 @@ Clique em Salvar alterações.
 ![12](https://lh3.googleusercontent.com/cwFIHOaQCxERn6PlP3pPhLqP3GjmEj-uIGDbxxpsK9XgfqPIgfTKrY-5CT67acU8ijbSrbVz=s0 "5.png")
 
 **Pronto nosso serviço da Azure já está pronto para receber requisições do app e autenticar no Facebook!**
-
-Caso você queira acompanhar o tutorial completo de como configurar a Azure e o projeto do Xamarin eu fiz um vídeo que explica passo a passo de como criar o social login e consumir as informações do facebook do usuário através do API de gráfico do Facebook. Confira no vídeo e não caia no sono!
-
